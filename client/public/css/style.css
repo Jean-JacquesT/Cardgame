@@ -1,0 +1,194 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #ebebeb;
+    text-align: center;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    text-align: left;
+    width: 100%;
+    box-shadow: 5px 0px lightgray;
+    padding: 15px 35px;
+    font-size: 30px;
+    z-index: 99;
+    font-weight: bold;
+}
+.fade{
+    transition: opacity .15s linear;
+}
+.inner-login{
+    margin: auto;
+    width: fit-content;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+.login {
+    margin-top: 15%;
+}
+.title-login{
+    font-size: 20px;
+    text-align: left;
+    padding: 5px 10px;
+    border-radius: 4px 4px 0 0;
+    background-color: #3cb371;
+    color: #ffffff;
+}
+.login input[type="text"], input[type="password"]{
+    margin: 20px;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.login input[type="submit"]{
+    margin: 20px;
+    border: none;
+    background-color: #3cb371;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+.login input[type="submit"]:hover{
+    background-color: #7b68ee;
+    cursor: pointer;
+}
+.error{
+    opacity: 0;
+    color: red;
+    font-size: 13px;
+}
+
+.add_widget{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: #ffffff;
+    font-size: 40px;
+    background-color: #3cb371;
+    width: 50px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px #808080;
+    border-radius: 50%;
+}
+.add_widget:hover{
+    cursor: pointer;
+    background-color: #7b68ee;
+    box-shadow: 0px 0px 15px #808080;
+}
+.widget_type{
+    position: fixed;
+    right: 10px;
+    bottom: 80px;
+    text-align: left;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px #808080;
+    border-radius: 4px;
+    width: 10%;
+    opacity: 0;
+}
+.widget_type > div{
+    padding: 10px;
+}
+.widget_type > div:hover{
+    cursor: pointer;
+    background-color: #ebebeb;
+}
+.dashboard-container{
+    margin: 10px;
+    margin-top: 80px;
+}
+.dashboard-container > *{
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+    width: max-content;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 15px #b3b3b3;
+    max-width: 30%;
+}
+
+.remove_widget{
+    color: #808080;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.cart{
+    width: min-content;
+}
+.cart img{
+    margin: 10px 5px;
+}
+
+.film_description{
+    text-align: left;
+}
+
+.meteo_answer{
+    padding: 10px;
+    font-size: 65px;
+}
+
+input[type="text"]{
+    margin: 20px;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+input[type="submit"]{
+    border: none;
+    background-color: #3cb371;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+input[type="submit"]:hover{
+    background-color: #7b68ee;
+    cursor: pointer;
+}
+.submitMeteo {
+    border: none;
+    background-color: #3cb371;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+.submitMeteo:hover{
+    background-color: #7b68ee;
+    cursor: pointer;
+}
+
+.submitFilm {
+    border: none;
+    background-color: #3cb371;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+.submitFilm:hover{
+    background-color: #7b68ee;
+    cursor: pointer;
+}
+
+input[type="submitmeteo"]:hover{
+    background-color: #7b68ee;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .login {
+        margin-top: 45%;
+    }
+}

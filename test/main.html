@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard 2019</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="./script/main.js"></script>
+</head>
+<body>
+    <header>
+        <button class="menu">MENU</button>
+        <div class="title" style="display: inline-block;">Dashboard 2020</div>
+        <button class="addWidget">Add Widget</button>
+        <!-- <button class="returnAuth">RETURN</button> -->
+    </header>
+    <div class="app-container" ng-app="myApp" ng-controller="myCtrl">
+        <div class="widgetType">
+            <button class="typeMeteo">Meteo</button>
+            <button class="typeHumidity">Humidity</button>
+        </div>
+        <div class="auth">
+            <ul>
+                <input id="username" type="username" ng-model="username" placeholder="Username">
+            </ul>
+            <ul>
+                <input id="password" type="password" ng-model="password" placeholder="Password">
+            </ul>
+            <ul>
+                <button class="SignIn">Sign In</button>
+                <button class="SignUp">Sign Up</button>
+            </ul>
+        </div>
+        <div class="dashboard">
+            <div class="title" style="text-align: center; margin: 2%;">Hello {{username}}</div>
+            <div class="widgetContainer"></div>
+        </div>
+    </div>
+    <footer>
+        Product by ExaFlops
+    </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+{
+   " client ": {
+      " host ": "0.0.0.0:8081"
+   },
+   " server ": {
+      " host ": "0.0.0.0:8082",
+      " current_time ": 1531680780,
+      " services ": [
+         {
+            " name ": " weather ",
+            " widgets ": [
+               {
+                  " name ": " city_temperature",
+                  " description ": " Display temperature for a city ",
+                  " params ": [
+                     {
+                        " name ": " city ",
+                        " type ": " string "
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            " name ": " rdice",
+            " widgets ": [
+               {
+                  " name ": " adice",
+                  " description ": " Displaying ta random dice number",
+                  " params ": [
+                     {
+                        " name ": " link ",
+                        " type ": " string "
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            " name ": " film ",
+            " widgets ": [
+               {
+                  " name ": " film ",
+                  " description ": " Display the description of a donated film ",
+                  " params ": [
+                     {
+                        " name ": " film ",
+                        " type ": " string "
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   }
+}
